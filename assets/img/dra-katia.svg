@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 560" role="img" aria-label="Espaço reservado para a foto da Dra. Kátia">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#BFE7F6"/><stop offset="1" stop-color="#1E88C8"/>
+    </linearGradient>
+  </defs>
+  <rect width="560" height="560" fill="url(#g)"/>
+  <g fill="none" stroke="#0B4F7C" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" opacity=".55">
+    <circle cx="280" cy="222" r="86"/>
+    <path d="M132 470c0-78 66-120 148-120s148 42 148 120"/>
+    <path d="M196 336c22 26 50 40 84 40s62-14 84-40"/>
+  </g>
+  <text x="280" y="522" text-anchor="middle" font-family="system-ui,sans-serif" font-size="26" font-weight="700" fill="#0B4F7C" opacity=".75">foto da Dra. Kátia</text>
+</svg>
