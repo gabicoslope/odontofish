@@ -139,9 +139,9 @@ recife, `#B39DDB` lilás de recife, `#146B4F` verde das algas.
 
 ## Tipografia
 
-**Fredoka** nos títulos (display gordinho e arredondado) e **Quicksand** no
-texto corrido (sans geométrica leve) — a dupla que mais se aproxima do par
-"GINGER blossom" da referência de fontes. Carregadas pelo Google Fonts com
+**Grandstander** nos títulos (display arredondado com balanço desenhado à mão)
+e **Quicksand** no texto corrido (sans geométrica leve) — a dupla escolhida a
+partir da referência "GINGER blossom". Carregadas pelo Google Fonts com
 `display=swap`, só nos pesos usados (500/600/700 de cada).
 
 Trocar a dupla é uma linha: os tokens `--fonte-titulo` e `--fonte-texto` no
@@ -152,8 +152,8 @@ Alternativas testadas na mesma linha:
 
 | Títulos | Texto | Clima |
 |---|---|---|
-| Fredoka | Quicksand | arredondada e cheia — a escolhida |
-| Grandstander | Quicksand | mais "desenhada à mão", com balanço |
+| Grandstander | Quicksand | mais "desenhada à mão", com balanço — a escolhida |
+| Fredoka | Quicksand | arredondada e cheia, mais geométrica |
 | Baloo 2 | Nunito | mais sóbria, menos infantil |
 
 O corpo do texto usa peso 500 porque a Quicksand é mais fina que a Nunito no
