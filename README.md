@@ -1,10 +1,19 @@
 # OdontoFish — site da Dra. Kátia
 
-Site estático de uma página, com a estrutura e o clima da referência de
-odontopediatria enviada (Preston Corners): faixa de recife no topo, seção de
-boas-vindas com algas gigantes e foto em círculo, faixa de areia para a
-doutora, campo de ondas em camadas com atalhos em bolha, jardim de corais no
-depoimento e mapa em círculo cercado de corais no fundo do mar.
+Site estático de uma página, seguindo de perto a estrutura e o clima da
+referência de odontopediatria enviada (Preston Corners), seção por seção:
+
+1. barra de contato + cabeçalho branco com a marca à esquerda e o menu à direita;
+2. faixa de recife com cardume denso, raios de luz e ícones sociais na lateral;
+3. boas-vindas em azul, algas gigantes nas duas margens, texto à esquerda,
+   foto em círculo à direita e cavalo-marinho ao centro;
+4. faixa de areia com conchas, búzios e estrelas para a Dra. Kátia;
+5. campo de ondas em camadas com os quatro atalhos em bolha em arco;
+6. tratamentos, TEA e primeira consulta (conteúdo próprio, não vem da referência);
+7. depoimento com tartaruga grande e jardim de corais ocupando o chão;
+8. localização com mapa em círculo e chão de rochas, anêmonas e corais;
+9. rodapé enxuto terminando na faixa fina de areia;
+10. concha de "voltar ao topo" no canto inferior direito.
 
 Todas as ilustrações são SVG **originais**, em traço desenhado à mão — nenhuma
 foi copiada da referência. Os textos também são próprios.
@@ -34,7 +43,7 @@ Procure por `PREENCHER` no `index.html`. Em resumo:
 | Horários | seção `#localizacao` e JSON-LD | seg–sex 9–19h, sáb 9–13h |
 | Bairro/cidade | linha acima do H1 | `São Paulo` |
 | Link do perfil no Google | seção de depoimentos | `google.com/maps` |
-| Link do Instagram | rodapé | `instagram.com` |
+| Links das redes | ícones ao lado do recife e rodapé | `facebook.com`, `instagram.com` |
 | Domínio | `canonical`, `og:url`, JSON-LD, e-mail | `odontofish.com.br` |
 | Convênios | FAQ "Vocês atendem convênio?" | texto genérico |
 | Foto da Dra. Kátia | `assets/img/dra-katia.svg` | ilustração neutra |
@@ -132,12 +141,12 @@ Tipografia: **Baloo 2** nos títulos, **Nunito** no texto.
 
 ## Ilustrações
 
-21 símbolos SVG no sprite do `index.html`: peixe-palhaço, peixe-anjo, baiacu,
+24 símbolos SVG no sprite do `index.html`: peixe-palhaço, peixe-anjo, baiacu,
 peixe-cirurgião, peixe-cirurgião-azul, peixe-borboleta, bodião, cavalo-marinho,
 tartaruga, água-viva, coral ramificado, leque de coral, esponjas-tubo,
 coral-cérebro, anêmona, grama-marinha, rochas, alga gigante, alga fina, concha,
-búzio, estrela-do-mar e bolhas.
+búzio, concha do botão, estrela-do-mar, bolhas e os três ícones de rede social.
 
-As faixas densas (recife do topo, jardim de corais do depoimento, chão de
-rochas da localização) são composições de `<use>` desses mesmos símbolos — daí
-a densidade da referência sem peso de arquivo.
+As faixas densas (recife do topo com 54 peixes no cardume, jardim de corais do
+depoimento, chão de rochas da localização) são composições de `<use>` desses
+mesmos símbolos — daí a densidade da referência sem peso de arquivo.

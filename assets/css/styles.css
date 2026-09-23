@@ -110,8 +110,12 @@ a{color:inherit}
 /* =========================================================
    FAIXA DE RECIFE
    ========================================================= */
-.recife{line-height:0;background:#0E6EA3}
-.recife svg{display:block;width:100%;height:clamp(58px,11.1vw,160px)}
+.recife{position:relative;line-height:0;background:#0B5F8D}
+.recife svg{display:block;width:100%;height:clamp(84px,18vw,260px)}
+.social{position:absolute;right:10px;top:50%;transform:translateY(-50%);display:grid;gap:8px;z-index:3}
+.social a{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.94);color:var(--deep);box-shadow:0 3px 10px rgba(4,34,58,.4)}
+.social a:hover{background:#fff;color:var(--ocean-800)}
+.social svg{width:17px;height:17px;fill:currentColor}
 .cardume>use{animation:nadar 7s ease-in-out infinite alternate}
 .cardume>use:nth-child(2n){animation-duration:9s}
 .cardume>use:nth-child(3n){animation-duration:11s}
@@ -145,11 +149,15 @@ a{color:inherit}
 .foto-bicho{position:absolute;right:-22px;bottom:4%;width:56px;color:#fff;filter:drop-shadow(0 3px 6px rgba(4,34,58,.35))}
 
 /* algas gigantes */
-.kelp{position:absolute;bottom:-4%;width:clamp(88px,12vw,200px);color:#146B4F;opacity:1;filter:drop-shadow(0 4px 10px rgba(4,34,58,.25))}
-.kelp--e{left:-4%}
-.kelp--d{right:-4%;transform:scaleX(-1)}
-.kelp--e2{left:-1%;width:clamp(64px,8vw,140px);bottom:-10%;color:#0F5F57;opacity:.9}
-.kelp--d2{right:-1%;width:clamp(64px,8vw,140px);bottom:-10%;color:#0F5F57;opacity:.9;transform:scaleX(-1)}
+.kelp{position:absolute;bottom:-6%;width:clamp(100px,18vw,320px);color:#0F6B4C;opacity:1;filter:drop-shadow(0 6px 14px rgba(4,34,58,.3))}
+.kelp--e{left:-7%}
+.kelp--d{right:-7%;transform:scaleX(-1)}
+.kelp--e2{left:1%;width:clamp(70px,11vw,210px);bottom:-16%;color:#0B5A4E;opacity:.95}
+.kelp--d2{right:1%;width:clamp(70px,11vw,210px);bottom:-16%;color:#0B5A4E;opacity:.95;transform:scaleX(-1)}
+
+.kelp--e3{left:-12%;width:clamp(76px,13vw,240px);bottom:-2%;color:#2E9E6C;opacity:.85}
+.kelp--d3{right:-12%;width:clamp(76px,13vw,240px);bottom:-2%;color:#2E9E6C;opacity:.85;transform:scaleX(-1)}
+.cavalo-grande{position:absolute;right:31%;bottom:9%;width:clamp(46px,8vw,132px);color:#8A4A12;filter:drop-shadow(0 4px 8px rgba(4,34,58,.35))}
 
 /* peixes soltos */
 .pz{position:absolute;filter:drop-shadow(0 3px 6px rgba(4,34,58,.28))}
@@ -157,7 +165,7 @@ a{color:inherit}
 .pz--2{right:3%;top:8%;width:clamp(52px,6vw,92px);color:#07395A;transform:scaleX(-1)}
 .pz--3{right:2%;bottom:21%;width:clamp(56px,7vw,100px);color:#07395A;transform:scaleX(-1)}
 .pz--4{right:32%;bottom:20%;width:clamp(48px,6vw,88px);color:#07395A;transform:scaleX(-1)}
-.pz--5{right:26%;top:9%;width:clamp(34px,4vw,62px);color:#07395A}
+.pz--5{right:40%;top:6%;width:clamp(34px,4vw,62px);color:#07395A}
 .pz--6{right:13%;bottom:15%;width:clamp(46px,5.5vw,84px);color:#07395A;transform:scaleX(-1)}
 .pz--7{left:6%;bottom:14%;width:clamp(38px,4.5vw,70px);color:#07395A;opacity:.85}
 .bolha-deco{position:absolute;color:rgba(255,255,255,.75)}
@@ -173,7 +181,7 @@ a{color:inherit}
 /* =========================================================
    FAIXA DE AREIA — DRA. KÁTIA
    ========================================================= */
-.areia{position:relative;background:var(--areia);padding:clamp(36px,6vw,72px) 0 clamp(34px,5vw,64px);overflow:hidden}
+.areia{position:relative;background:var(--areia);background-image:radial-gradient(rgba(176,124,63,.14) 1px,transparent 1.3px),radial-gradient(rgba(176,124,63,.1) 1px,transparent 1.3px);background-size:22px 22px,34px 34px;background-position:0 0,11px 17px;padding:clamp(36px,6vw,72px) 0 clamp(34px,5vw,64px);overflow:hidden}
 .areia__deco{position:absolute;inset:0;pointer-events:none}
 .areia__in{display:grid;gap:clamp(24px,4vw,52px);align-items:center;position:relative;z-index:2}
 .areia__foto{position:relative;justify-self:center;width:min(74vw,330px)}
@@ -185,12 +193,13 @@ a{color:inherit}
 .creds span{font-size:.88rem;color:var(--tinta-fraca)}
 .areia__cta{display:flex;flex-wrap:wrap;gap:12px}
 .ar{position:absolute}
-.ar--estrela{left:2%;bottom:14%;width:clamp(48px,6vw,88px);color:var(--coral-700);opacity:.8}
-.ar--estrela2{right:3%;top:10%;width:clamp(40px,5vw,70px);color:#C08A2A;opacity:.6}
-.ar--buzio{right:1%;bottom:16%;width:clamp(52px,6.5vw,96px);color:#B8823E;opacity:.55}
-.ar--concha{left:9%;top:8%;width:clamp(40px,5vw,74px);color:#BE8B4E;opacity:.45}
-.ar--concha2{right:14%;bottom:6%;width:clamp(36px,4.5vw,62px);color:#B07C3F;opacity:.4}
-.ar--concha3{position:absolute;right:-20px;bottom:6%;width:62px;color:#C08A2A;opacity:.85}
+.ar--estrela{left:1%;top:24%;width:clamp(62px,9vw,150px);color:#B8873B;opacity:.9}
+.ar--estrela2{right:22%;bottom:8%;width:clamp(40px,5vw,84px);color:#B8873B;opacity:.75}
+.ar--buzio{right:1%;top:10%;width:clamp(58px,8vw,138px);color:#A9742F;opacity:.9}
+.ar--concha{right:4%;bottom:16%;width:clamp(48px,6.5vw,112px);color:#B5833C;opacity:.8}
+.ar--concha2{left:13%;bottom:5%;width:clamp(38px,4.5vw,76px);color:#B5833C;opacity:.6}
+.ar--concha3{position:absolute;left:-16px;bottom:8%;width:clamp(46px,6vw,92px);color:#A9742F;opacity:1;z-index:3}
+.ar--concha4{position:absolute;right:-14px;top:10%;width:clamp(40px,5vw,76px);color:#B5833C;opacity:.95;z-index:3}
 
 /* =========================================================
    FAIXA DE ONDAS EM CAMADAS + BOLHAS
@@ -270,9 +279,9 @@ a{color:inherit}
 /* =========================================================
    DEPOIMENTOS (espaço reservado) + JARDIM DE CORAIS
    ========================================================= */
-.depos{position:relative;overflow:hidden;background:var(--deep-800);color:#fff;padding:clamp(44px,6vw,76px) 0 clamp(150px,20vw,260px)}
+.depos{position:relative;overflow:hidden;background:var(--deep-800);color:#fff;padding:clamp(44px,6vw,76px) 0 clamp(155px,22vw,290px)}
 .depos__deco{position:absolute;inset:0;pointer-events:none}
-.jardim{position:absolute;left:0;right:0;bottom:0;width:100%;height:clamp(110px,17vw,230px)}
+.jardim{position:absolute;left:0;right:0;bottom:0;width:100%;height:clamp(140px,23vw,330px)}
 .dp{position:absolute;filter:drop-shadow(0 4px 8px rgba(4,34,58,.3))}
 .dp--tartaruga{left:0;top:12%;width:clamp(110px,18vw,268px);color:#E8F6FC;filter:drop-shadow(0 8px 18px rgba(4,34,58,.55))}
 .dp--pz1{right:6%;top:12%;width:clamp(44px,5vw,84px);color:rgba(255,255,255,.55);transform:scaleX(-1)}
@@ -310,9 +319,9 @@ a{color:inherit}
 /* =========================================================
    ONDE FICAMOS — FUNDO DO MAR
    ========================================================= */
-.local{position:relative;overflow:hidden;background:var(--deep-900);color:#fff;padding:clamp(48px,7vw,84px) 0 clamp(160px,22vw,280px)}
+.local{position:relative;overflow:hidden;background:var(--deep-900);color:#fff;padding:clamp(48px,7vw,84px) 0 clamp(165px,23vw,310px)}
 .local__deco{position:absolute;inset:0;pointer-events:none}
-.pedras{position:absolute;left:0;right:0;bottom:0;width:100%;height:clamp(120px,18vw,245px)}
+.pedras{position:absolute;left:0;right:0;bottom:0;width:100%;height:clamp(150px,25vw,360px)}
 .lc--1{left:4%;top:12%;width:clamp(52px,6.5vw,96px);color:rgba(255,255,255,.55)}
 .lc--2{right:4%;top:20%;width:clamp(46px,5.5vw,86px);color:rgba(255,255,255,.5);transform:scaleX(-1)}
 .lc--3{left:18%;bottom:40%;width:clamp(40px,5vw,78px);color:rgba(255,255,255,.4)}
@@ -340,17 +349,15 @@ a{color:inherit}
 /* =========================================================
    RODAPÉ
    ========================================================= */
-.rodape{background:var(--abissal);color:#fff;padding:clamp(34px,5vw,54px) 0 0}
-.rodape__in{display:grid;gap:28px;padding-bottom:28px}
-.rodape__col h2{font-size:1.08rem;color:var(--sol);margin-bottom:10px}
-.rodape__col ul{display:grid;gap:7px}
-.rodape__col a{color:var(--agua-clara);text-decoration:none;text-underline-offset:4px}
-.rodape__col a:hover{text-decoration:underline;color:#fff}
-.rodape__marca{display:flex;align-items:center;gap:8px;font-family:"Baloo 2",sans-serif;font-size:1.5rem;font-weight:700;margin-bottom:6px}
+.rodape{background:var(--abissal);color:#fff;padding:clamp(24px,3.4vw,38px) 0 0}
+.rodape__in{display:grid;gap:16px;justify-items:center;text-align:center;padding-bottom:22px}
+.rodape__marca{display:flex;align-items:center;gap:8px;font-family:"Baloo 2",sans-serif;font-size:1.5rem;font-weight:700;margin:0}
 .rodape__marca .ico--lg{color:var(--turq)}
 .rodape__nome{white-space:nowrap}
 .rodape__marca b{color:var(--turq)}
-.rodape__sub{color:var(--agua-clara);max-width:34ch;margin:0}
+.rodape__nav ul{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 18px}
+.rodape__nav a{color:var(--agua-clara);text-decoration:none;text-underline-offset:4px;font-size:.94rem}
+.rodape__nav a:hover{text-decoration:underline;color:#fff}
 .rodape__faixa{background:var(--areia);color:#4A3A1C}
 .rodape__faixa-in{display:grid;gap:4px;padding:12px 0;font-size:.8rem;text-align:center}
 .rodape__faixa p{margin:0}
@@ -358,12 +365,12 @@ a{color:inherit}
 /* =========================================================
    FLUTUANTES
    ========================================================= */
-.wa-float{position:fixed;right:14px;bottom:14px;z-index:70;display:inline-flex;align-items:center;gap:.5em;text-decoration:none;background:var(--wa);color:var(--wa-tinta);border:2px solid var(--wa-borda);font-family:"Baloo 2",sans-serif;font-weight:700;padding:.7em 1.1em;border-radius:999px;box-shadow:0 6px 0 var(--wa-borda),0 14px 26px rgba(6,47,74,.4);animation:pop var(--t) both}
+.wa-float{position:fixed;left:14px;bottom:14px;z-index:70;display:inline-flex;align-items:center;gap:.5em;text-decoration:none;background:var(--wa);color:var(--wa-tinta);border:2px solid var(--wa-borda);font-family:"Baloo 2",sans-serif;font-weight:700;padding:.7em 1.1em;border-radius:999px;box-shadow:0 6px 0 var(--wa-borda),0 14px 26px rgba(6,47,74,.4);animation:pop var(--t) both}
 .wa-float .ico{width:1.5em;height:1.5em}
 .wa-float:hover{background:#31e074}
 .wa-float[hidden]{display:none}
 
-.topo-btn{position:fixed;left:14px;bottom:14px;z-index:70;width:84px;height:76px;padding:0;border:0;background:none;cursor:pointer;display:grid;place-items:center;animation:pop var(--t) both}
+.topo-btn{position:fixed;right:14px;bottom:14px;z-index:70;width:84px;height:76px;padding:0;border:0;background:none;cursor:pointer;display:grid;place-items:center;animation:pop var(--t) both}
 .topo-btn__concha{position:absolute;inset:0;width:100%;height:100%;color:#B0295A;filter:drop-shadow(0 6px 14px rgba(6,47,74,.5))}
 .topo-btn__txt{position:relative;font-family:"Baloo 2",sans-serif;font-weight:700;font-size:.66rem;line-height:1.1;color:#66102F;transform:translateY(2px);max-width:74%}
 .topo-btn:hover .topo-btn__concha{animation:balanca .7s ease-in-out infinite alternate}
@@ -410,17 +417,18 @@ a{color:inherit}
   /* menos decoração: nada de ilustração competindo com o texto */
   .kelp--e2,.kelp--d2,.pz--3,.pz--5,.pz--6,.pz--7,.bd--2,
   .ar--concha,.ar--concha2,.ar--estrela2,.sv--1,.sv--2,
-  .te--2,.bd--3,.dp--pz2,.dp--pz3,.lc--3,.lc--4,.bd--4{display:none}
+  .te--2,.bd--3,.dp--pz2,.dp--pz3,.lc--3,.lc--4,.bd--4,
+  .kelp--e3,.kelp--d3,.ar--concha2,.ar--estrela2,.ar--concha4,.social{display:none}
   .kelp{width:88px;opacity:.9}
   .pz--1{left:-1%;top:auto;bottom:6%;width:58px}
   .pz--2{right:-1%;top:auto;bottom:16%;width:54px}
   .dp--tartaruga{width:96px;top:auto;bottom:24%;left:-2%;opacity:.6}
   .dp--pz1{width:46px}
   .depos__vazio{padding:22px 18px}
-  .wa-float{padding:0;width:58px;height:58px;justify-content:center;border-radius:50%;right:16px;bottom:16px}
+  .wa-float{padding:0;width:58px;height:58px;justify-content:center;border-radius:50%;left:auto;right:16px;bottom:16px}
   .wa-float .ico{width:1.9em;height:1.9em}
   .wa-float__txt{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-  .topo-btn{left:auto;right:16px;bottom:86px;width:70px;height:64px}
+  .topo-btn{right:16px;bottom:86px;width:70px;height:64px}
   .topo-btn__txt{font-size:.6rem}
 }
 
@@ -454,13 +462,13 @@ a{color:inherit}
   :root{--hdr:72px}
   .cards{grid-template-columns:repeat(3,1fr)}
   .tea__lista,.passos__lista{grid-template-columns:repeat(2,1fr)}
-  .boas__in{grid-template-columns:1fr minmax(280px,400px)}
+  .boas__in{grid-template-columns:minmax(0,1fr) minmax(270px,370px);padding-inline:clamp(30px,7vw,140px)}
   .areia__in{grid-template-columns:minmax(260px,380px) 1fr}
   .local__in{grid-template-columns:minmax(280px,420px) 1fr}
   .rodape__in{grid-template-columns:1.4fr 1fr 1fr}
   .depos__lista:has(.depo){grid-template-columns:repeat(2,1fr)}
-  .wa-float{right:24px;bottom:24px}
-  .topo-btn{left:24px;bottom:20px;width:116px;height:104px}
+  .wa-float{left:24px;bottom:24px}
+  .topo-btn{right:24px;bottom:18px;width:124px;height:110px}
   .topo-btn__txt{font-size:.9rem}
   .topo-btn__txt{font-size:.82rem}
   /* bolhas em arco, como na referência */
