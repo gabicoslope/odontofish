@@ -26,8 +26,7 @@ index.html                  página inteira + sprite de ilustrações + JSON-LD
 assets/css/styles.css       estilos
 assets/js/main.js           menu, flutuantes, mapa sob demanda (≈2 KB)
 assets/img/favicon.svg
-assets/img/dra-katia.svg    placeholder do retrato — trocar por foto real
-assets/img/crianca.svg      placeholder da foto de criança (boas-vindas)
+assets/img/*.webp/.jpg      fotos reais do consultório (ver abaixo)
 assets/img/mapa-preview.svg prévia do mapa (o iframe só carrega no clique)
 ```
 
@@ -46,12 +45,29 @@ Procure por `PREENCHER` no `index.html`. Em resumo:
 | Links das redes | ícones ao lado do recife e rodapé | `facebook.com`, `instagram.com` |
 | Domínio | `canonical`, `og:url`, JSON-LD, e-mail | `odontofish.com.br` |
 | Convênios | FAQ "Vocês atendem convênio?" | texto genérico |
-| Foto da Dra. Kátia | `assets/img/dra-katia.svg` | ilustração neutra |
-| Foto de criança (topo) | `assets/img/crianca.svg` | ilustração neutra |
 | Coordenadas do mapa | `data-src` de `#mapa` | Av. Paulista |
 
 O `data-src` do mapa aceita qualquer URL de embed do Google Maps — pegue em
 *Compartilhar → Incorporar um mapa* e cole só a URL do `src`.
+
+## Fotos
+
+As cinco fotos são do consultório, recortadas e otimizadas em dois tamanhos e
+dois formatos cada (WebP com JPEG de reserva), servidas por `srcset`:
+
+| Arquivo | Onde aparece |
+|---|---|
+| `consultorio-menino` | círculo das boas-vindas (elemento de LCP, sem lazy) |
+| `dra-katia-foto` | círculo da seção da Dra. Kátia |
+| `consultorio-1..3` | faixa "No consultório" |
+
+Nenhuma passa de 62 KB. Para trocar qualquer uma, substitua o conjunto
+`nome.webp`, `nome.jpg`, `nome-sm.webp` e `nome-sm.jpg` mantendo as proporções
+(1:1 nos círculos, 4:5 na faixa).
+
+**Todas mostram menores identificáveis.** Só publique com autorização por
+escrito de cada responsável — LGPD, ECA e Código de Ética Odontológica. Os
+pontos do HTML estão marcados com `[AUTORIZAÇÃO]`.
 
 ## Sobre o texto
 
