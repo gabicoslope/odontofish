@@ -145,6 +145,8 @@ a{color:inherit}
 .selos{display:flex;flex-direction:column;align-items:flex-start;gap:8px;margin:0 0 18px}
 .selo{display:inline-flex;align-items:center;gap:8px;font-weight:700;background:#fff;color:var(--tinta);border-radius:999px;padding:7px 16px;font-size:.92rem;box-shadow:var(--sombra)}
 .selo--cro{background:rgba(255,255,255,.95);color:var(--deep);font-size:.84rem}
+.selo--anos{background:rgba(255,200,69,.95);color:#4A3200;font-size:.84rem}
+.selo--anos b{color:#3A2600}
 .stars{display:inline-flex;gap:1px;color:#F2A100}
 .stars .ico{width:1em;height:1em}
 .boas__cta{display:flex;flex-direction:column;align-items:stretch;gap:10px}
@@ -354,8 +356,8 @@ a{color:inherit}
 .pedras{position:absolute;left:0;right:0;bottom:0;width:100%;height:clamp(150px,25vw,360px)}
 .lc--1{left:4%;top:12%;width:clamp(52px,6.5vw,96px);color:rgba(255,255,255,.55)}
 .lc--2{right:4%;top:20%;width:clamp(46px,5.5vw,86px);color:rgba(255,255,255,.5);transform:scaleX(-1)}
-.lc--3{left:18%;bottom:40%;width:clamp(40px,5vw,78px);color:rgba(255,255,255,.4)}
-.lc--4{right:18%;bottom:44%;width:clamp(42px,5vw,78px);color:rgba(255,255,255,.45);transform:scaleX(-1)}
+.lc--3{left:15%;bottom:22%;width:clamp(40px,5vw,78px);color:rgba(255,255,255,.4)}
+.lc--4{right:9%;bottom:20%;width:clamp(42px,5vw,78px);color:rgba(255,255,255,.45);transform:scaleX(-1)}
 .bd--4{left:44%;bottom:38%;width:18px;color:rgba(255,255,255,.35)}
 .local__in{display:grid;gap:clamp(26px,5vw,56px);align-items:center;position:relative;z-index:2}
 .mapa{position:relative;justify-self:center;width:min(80vw,380px)}
@@ -372,6 +374,12 @@ a{color:inherit}
 .local__dados{font-style:normal;margin-bottom:22px}
 .local__dados p{display:flex;gap:10px;align-items:flex-start;color:var(--agua-clara);margin-bottom:12px}
 .local__dados p>span{flex:1;min-width:0}
+.local__dados a{color:#fff;text-underline-offset:4px}
+.local__perto{display:inline-block;margin-top:4px;font-size:.92em;color:var(--sol)}
+.regioes{margin:0 0 22px}
+.regioes h3{font-size:1rem;color:#fff;margin-bottom:10px}
+.regioes ul{display:flex;flex-wrap:wrap;gap:8px}
+.regioes li{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.26);border-radius:999px;padding:5px 13px;font-size:.88rem;color:var(--agua-clara)}
 .local__dados b{color:#fff;font-size:1.22em;font-family:var(--fonte-titulo)}
 .local__dados .ico{color:var(--sol);margin-top:.2em}
 .local__cta{display:flex;flex-wrap:wrap;gap:12px}
@@ -466,10 +474,15 @@ a{color:inherit}
   .topo-btn__txt{font-size:.6rem}
 }
 
+/* telas muito baixas (iPhone SE 1a geração): o essencial tem prioridade */
+@media (max-width:640px) and (max-height:520px){
+  .lead-2{display:none}
+}
+
 /* telas baixas: tudo o que importa continua acima da dobra */
 @media (max-width:640px) and (max-height:700px){
   .boas{padding-top:10px;padding-bottom:clamp(70px,12vw,110px)}
-  .boas .eyebrow{display:none}
+  .boas .eyebrow,.selo--anos{display:none}
   .boas h1{font-size:clamp(1.55rem,6.4vw,2.1rem);margin-bottom:8px}
   .h1__sub{font-size:.56em}
   .boas__lead{font-size:.92rem;line-height:1.42;margin-bottom:8px;max-width:36ch}

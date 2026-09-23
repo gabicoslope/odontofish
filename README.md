@@ -1,4 +1,4 @@
-# OdontoFish — site da Dra. Kátia
+# OdontoFish — site da Dra. Katia
 
 Site estático de uma página, seguindo de perto a estrutura e o clima da
 referência de odontopediatria enviada (Preston Corners), seção por seção:
@@ -7,7 +7,7 @@ referência de odontopediatria enviada (Preston Corners), seção por seção:
 2. faixa de recife com cardume denso, raios de luz e ícones sociais na lateral;
 3. boas-vindas em azul, algas gigantes nas duas margens, texto à esquerda,
    foto em círculo à direita e cavalo-marinho ao centro;
-4. faixa de areia com conchas, búzios e estrelas para a Dra. Kátia;
+4. faixa de areia com conchas, búzios e estrelas para a Dra. Katia;
 5. campo de ondas em camadas com os quatro atalhos em bolha em arco;
 6. tratamentos, TEA e primeira consulta (conteúdo próprio, não vem da referência);
 7. depoimento com tartaruga grande e jardim de corais ocupando o chão;
@@ -30,25 +30,26 @@ assets/img/*.webp/.jpg      fotos reais do consultório (ver abaixo)
 assets/img/mapa-preview.svg prévia do mapa (o iframe só carrega no clique)
 ```
 
-## Antes de publicar — o que precisa ser preenchido
+## Antes de publicar — o que ainda falta
 
-Procure por `PREENCHER` no `index.html`. Em resumo:
+Os dados de contato agora vêm do site oficial (odontofish.com.br). Procure por
+`PREENCHER` e `CONFIRMAR` no `index.html`. Restam:
 
-| O quê | Onde | Valor provisório |
+| O quê | Onde | Situação |
 |---|---|---|
-| Número do WhatsApp | 9 links `wa.me` + `telephone` no JSON-LD | `5511900000000` |
-| Telefone exibido | rodapé | `(11) 90000-0000` |
-| Endereço completo | seção `#localizacao`, rodapé e JSON-LD | `Rua Exemplo, 000` |
-| Horários | seção `#localizacao` e JSON-LD | seg–sex 9–19h, sáb 9–13h |
-| Bairro/cidade | linha acima do H1 | `São Paulo` |
-| Link do perfil no Google | seção de depoimentos | `google.com/maps` |
-| Links das redes | ícones ao lado do recife e rodapé | `facebook.com`, `instagram.com` |
-| Domínio | `canonical`, `og:url`, JSON-LD, e-mail | `odontofish.com.br` |
+| Instagram e Facebook | ícones ao lado do recife e rodapé | link genérico |
+| Link do perfil no Google | seção de depoimentos | link genérico |
+| CEP | endereço e JSON-LD | omitido, não aparece no site oficial |
 | Convênios | FAQ "Vocês atendem convênio?" | texto genérico |
-| Coordenadas do mapa | `data-src` de `#mapa` | Av. Paulista |
+| E-mail de contato | rodapé | removido, não aparece no site oficial |
 
-O `data-src` do mapa aceita qualquer URL de embed do Google Maps — pegue em
-*Compartilhar → Incorporar um mapa* e cole só a URL do `src`.
+Já preenchidos com dado real: WhatsApp (11) 97683-6914, telefone
+(11) 2911-5266, endereço Av. do Oratório, 2662 – Sala 3 (São Lucas),
+horários seg–sex 9h–18h e sábado 8h–12h, os oito bairros atendidos,
+"+25 anos" de experiência e o nome **Katia**, sem acento.
+
+O `data-src` do mapa já aponta para o endereço certo. Para trocar, pegue a
+URL em *Compartilhar → Incorporar um mapa* no Google Maps.
 
 ## Fotos
 
@@ -58,7 +59,7 @@ dois formatos cada (WebP com JPEG de reserva), servidas por `srcset`:
 | Arquivo | Onde aparece |
 |---|---|
 | `consultorio-menino` | círculo das boas-vindas (elemento de LCP, sem lazy) |
-| `dra-katia-foto` | círculo da seção da Dra. Kátia |
+| `dra-katia-foto` | círculo da seção da Dra. Katia |
 | `consultorio-1..3` | faixa "No consultório" |
 
 Nenhuma passa de 62 KB. Para trocar qualquer uma, substitua o conjunto
@@ -72,7 +73,7 @@ pontos do HTML estão marcados com `[AUTORIZAÇÃO]`.
 ## Sobre o texto
 
 O texto do site é rascunho: descreve uma rotina de consultório plausível, não
-a rotina real da Dra. Kátia. Antes de publicar, leia procurando por
+a rotina real da Dra. Katia. Antes de publicar, leia procurando por
 `CONFIRMAR` no `index.html` — são as afirmações operacionais e clínicas que
 precisam bater com a prática de verdade:
 
@@ -82,7 +83,7 @@ precisam bater com a prática de verdade:
 - a antecedência que vocês pedem para a chegada;
 - a duração real da primeira consulta;
 - se o orçamento é mesmo entregue por escrito antes do procedimento;
-- o ano em que a Dra. Kátia começou a atender.
+- o ano em que a Dra. Katia começou a atender.
 
 Promessa que não se cumpre em consultório vira reclamação, e o Código de
 Ética Odontológica cobra isso.
@@ -164,7 +165,7 @@ python3 -m http.server 8099
 | `--turq` / `--turq-800` | `#2EC4B6` / `#0F6158` | acento / o mesmo em texto |
 | `--coral` / `--coral-700` | `#FF7A59` / `#C2410C` | acento / o mesmo em texto |
 | `--sol` | `#FFC845` | destaques em fundo escuro |
-| `--areia` | `#F6E7C8` | faixa da Dra. Kátia |
+| `--areia` | `#F6E7C8` | faixa da Dra. Katia |
 | `--tinta` | `#1F2A37` | texto em fundo claro |
 | `--wa` | `#25D366` | WhatsApp |
 
