@@ -53,6 +53,24 @@ Procure por `PREENCHER` no `index.html`. Em resumo:
 O `data-src` do mapa aceita qualquer URL de embed do Google Maps — pegue em
 *Compartilhar → Incorporar um mapa* e cole só a URL do `src`.
 
+## Sobre o texto
+
+O texto do site é rascunho: descreve uma rotina de consultório plausível, não
+a rotina real da Dra. Kátia. Antes de publicar, leia procurando por
+`CONFIRMAR` no `index.html` — são as afirmações operacionais e clínicas que
+precisam bater com a prática de verdade:
+
+- quais recursos de baixo estímulo o consultório realmente oferece (abafador,
+  óculos escuros, sala reservada);
+- a política sobre contenção física e sedação;
+- a antecedência que vocês pedem para a chegada;
+- a duração real da primeira consulta;
+- se o orçamento é mesmo entregue por escrito antes do procedimento;
+- o ano em que a Dra. Kátia começou a atender.
+
+Promessa que não se cumpre em consultório vira reclamação, e o Código de
+Ética Odontológica cobra isso.
+
 ## Depoimentos
 
 A seção `#depoimentos` está **propositalmente vazia**. Dentro dela há um

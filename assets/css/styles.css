@@ -53,7 +53,11 @@ a{color:inherit}
 .tit{font-size:clamp(1.65rem,1.1rem + 2.4vw,2.85rem);letter-spacing:-.01em}
 .tit--ink{color:var(--tinta)}
 .tit--luz{color:#fff}
-.tit__onda{display:block;width:clamp(140px,22vw,196px);height:auto;margin:12px 0 18px;color:var(--sol);filter:drop-shadow(0 1px 0 rgba(6,47,74,.25))}
+.tit__onda{display:block;width:clamp(140px,22vw,190px);height:auto;margin:12px 0 18px;color:var(--sol);filter:drop-shadow(0 1px 0 rgba(6,47,74,.25))}
+.tit__onda--curta{width:clamp(104px,15vw,132px)}
+.tit__onda--longa{width:clamp(160px,26vw,224px)}
+/* sem o rabisco, o título ainda precisa respirar */
+.tit:not(:has(+ .tit__onda)){margin-bottom:16px}
 .tit--ink + .tit__onda{color:var(--coral-700)}
 .sec-head{text-align:center;margin-bottom:clamp(28px,5vw,48px)}
 .sec-head .tit__onda{margin-inline:auto}
@@ -237,14 +241,22 @@ a{color:inherit}
 .cards{display:grid;grid-template-columns:1fr;gap:clamp(18px,2.6vw,26px)}
 .card{position:relative;background:#fff;border-radius:var(--raio-lg);padding:26px 24px 22px;box-shadow:var(--sombra);border-top:6px solid var(--turq);transition:transform var(--t),box-shadow var(--t)}
 .card:hover{transform:translateY(-6px);box-shadow:var(--sombra-forte)}
-.card__fish{display:block;width:96px;height:78px;margin-bottom:8px;color:var(--deep)}
+.card__fish{display:block;width:96px;height:78px;margin-bottom:8px;color:var(--deep);transform-origin:left bottom}
+.card:nth-child(2) .card__fish{width:88px;transform:rotate(-4deg)}
+.card:nth-child(3) .card__fish{transform:rotate(3deg)}
+.card:nth-child(4) .card__fish{width:104px;transform:rotate(-2deg)}
+.card:nth-child(5) .card__fish{width:92px;transform:rotate(4deg)}
+.card:nth-child(6) .card__fish{width:108px;transform:rotate(-3deg)}
 .card__fish--alto{width:58px}
 .card__fish svg{width:100%;height:100%}
 .card h3{font-size:1.28rem;color:var(--deep);margin-bottom:8px}
 .card p{margin:0;color:var(--tinta-fraca)}
 .card p a{color:var(--coral-700);font-weight:700;text-underline-offset:3px}
-.card:nth-child(2n){border-top-color:var(--sol)}
-.card:nth-child(3n){border-top-color:var(--coral)}
+.card:nth-child(2){border-top-color:var(--sol)}
+.card:nth-child(3){border-top-color:var(--coral)}
+.card:nth-child(4){border-top-color:var(--turq)}
+.card:nth-child(5){border-top-color:var(--coral)}
+.card:nth-child(6){border-top-color:var(--sol)}
 
 /* =========================================================
    AUTISMO E TEA
