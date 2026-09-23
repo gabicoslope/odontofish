@@ -137,7 +137,27 @@ python3 -m http.server 8099
 Acentos usados só em ilustração (nunca com texto por cima): `#FF9EB5` rosa de
 recife, `#B39DDB` lilás de recife, `#146B4F` verde das algas.
 
-Tipografia: **Baloo 2** nos títulos, **Nunito** no texto.
+## Tipografia
+
+**Fredoka** nos títulos (display gordinho e arredondado) e **Quicksand** no
+texto corrido (sans geométrica leve) — a dupla que mais se aproxima do par
+"GINGER blossom" da referência de fontes. Carregadas pelo Google Fonts com
+`display=swap`, só nos pesos usados (500/600/700 de cada).
+
+Trocar a dupla é uma linha: os tokens `--fonte-titulo` e `--fonte-texto` no
+topo do `styles.css` alimentam o site inteiro. Se mudar, ajuste também a URL
+do Google Fonts nas três tags do `<head>` (preload, stylesheet e noscript).
+
+Alternativas testadas na mesma linha:
+
+| Títulos | Texto | Clima |
+|---|---|---|
+| Fredoka | Quicksand | arredondada e cheia — a escolhida |
+| Grandstander | Quicksand | mais "desenhada à mão", com balanço |
+| Baloo 2 | Nunito | mais sóbria, menos infantil |
+
+O corpo do texto usa peso 500 porque a Quicksand é mais fina que a Nunito no
+peso normal — abaixo disso ela perde legibilidade em tela pequena.
 
 ## Ilustrações
 
