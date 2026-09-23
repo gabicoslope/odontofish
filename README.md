@@ -25,7 +25,8 @@ pasta em qualquer hospedagem estática.
 index.html                  página inteira + sprite de ilustrações + JSON-LD
 assets/css/styles.css       estilos
 assets/js/main.js           menu, flutuantes, mapa sob demanda (≈2 KB)
-assets/img/favicon.svg
+assets/img/logo-peixe.png      mascote oficial (marca, rodapé e localização)
+assets/img/favicon-*.png    ícone do site, recortado do mascote
 assets/img/*.webp/.jpg      fotos reais do consultório (ver abaixo)
 assets/img/mapa-preview.svg prévia do mapa (o iframe só carrega no clique)
 ```
@@ -38,6 +39,7 @@ Os dados de contato agora vêm do site oficial (odontofish.com.br). Procure por
 | O quê | Onde | Situação |
 |---|---|---|
 | Instagram e Facebook | ícones ao lado do recife e rodapé | link genérico |
+| Wordmark do logo | está em texto (Grandstander), não na tipografia original da marca | aproximação |
 | Link do perfil no Google | seção de depoimentos | link genérico |
 | CEP | endereço e JSON-LD | omitido, não aparece no site oficial |
 | Convênios | FAQ "Vocês atendem convênio?" | texto genérico |
@@ -61,6 +63,8 @@ dois formatos cada (WebP com JPEG de reserva), servidas por `srcset`:
 | `consultorio-menino` | círculo das boas-vindas (elemento de LCP, sem lazy) |
 | `dra-katia-foto` | círculo da seção da Dra. Katia |
 | `consultorio-1..3` | faixa "No consultório" |
+| `logo-peixe.png` | mascote oficial no cabeçalho, no rodapé e na localização |
+| `favicon-32/48/180.png` | ícone do site, recortado do mascote |
 
 Nenhuma passa de 62 KB. Para trocar qualquer uma, substitua o conjunto
 `nome.webp`, `nome.jpg`, `nome-sm.webp` e `nome-sm.jpg` mantendo as proporções

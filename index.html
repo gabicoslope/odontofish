@@ -17,9 +17,13 @@
 <meta property="og:url" content="https://www.odontofish.com.br/">
 <meta name="twitter:card" content="summary_large_image">
 
-<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="assets/img/favicon.svg">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/img/favicon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/favicon-180.png">
 
+<link rel="preload" as="image" type="image/webp"
+      imagesrcset="assets/img/consultorio-menino-sm.webp 420w, assets/img/consultorio-menino.webp 720w"
+      imagesizes="(min-width:960px) 380px, 66vw" href="assets/img/consultorio-menino.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Grandstander:wght@500;600;700&amp;family=Quicksand:wght@500;600;700&amp;display=swap">
@@ -265,9 +269,6 @@
 </symbol>
 
 <!-- ---------- MARCA E ÍCONES ---------- -->
-<symbol id="i-dente" viewBox="0 0 64 64">
-  <path d="M32 6c-8-4-17-4-22 2-5 7-4 18-1 29 3 10 5 21 9 21 5 0 5-13 14-13s9 13 14 13c4 0 6-11 9-21 3-11 4-22-1-29-5-6-14-6-22-2Z" fill="currentColor"/>
-</symbol>
 <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.4l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3-5.8 3 1.1-6.5L2.6 9.2l6.5-.9z"/></symbol>
 <symbol id="i-whats" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.6 2 2.2 6.4 2.2 11.84c0 1.9.5 3.68 1.4 5.22L2 22.3l5.4-1.55a9.8 9.8 0 0 0 4.64 1.18h.01c5.43 0 9.84-4.4 9.84-9.84S17.47 2 12.04 2Zm0 17.98h-.01a8.2 8.2 0 0 1-4.14-1.13l-.3-.18-3.08.88.82-3-.19-.31a8.13 8.13 0 0 1-1.25-4.4c0-4.5 3.66-8.16 8.16-8.16 2.18 0 4.23.85 5.77 2.4a8.1 8.1 0 0 1 2.39 5.77c0 4.5-3.66 8.13-8.17 8.13Zm4.47-6.09c-.24-.12-1.45-.72-1.68-.8-.22-.08-.39-.12-.55.12s-.63.8-.77.96-.28.18-.52.06a6.7 6.7 0 0 1-1.97-1.21 7.4 7.4 0 0 1-1.36-1.7c-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42s.16-.24.24-.4a.45.45 0 0 0-.02-.43c-.06-.12-.55-1.33-.75-1.81-.2-.48-.4-.41-.55-.42h-.47a.9.9 0 0 0-.65.3c-.22.24-.85.83-.85 2.03s.88 2.35 1 2.51c.12.16 1.72 2.63 4.17 3.69.58.25 1.04.4 1.39.51.59.19 1.12.16 1.54.1.47-.07 1.45-.59 1.66-1.17.2-.57.2-1.06.14-1.16s-.22-.16-.46-.28Z"/></symbol>
 <symbol id="i-pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7.5 7.5 0 0 0-7.5 7.5C4.5 15.4 12 22 12 22s7.5-6.6 7.5-12.5A7.5 7.5 0 0 0 12 2Zm0 10.2a2.7 2.7 0 1 1 0-5.4 2.7 2.7 0 0 1 0 5.4Z"/></symbol>
@@ -298,13 +299,7 @@
 
   <div class="wrap hdr__in">
     <a class="brand" href="#topo">
-      <span class="brand__mark" aria-hidden="true">
-        <svg viewBox="0 0 64 64" class="brand__fish" role="presentation">
-          <path d="M8 32c8-12 22-18 36-16 8 1 15 5 20 11-5 8-13 14-23 17C26 47 14 42 8 32Z" fill="#2EC4B6"/>
-          <path d="M8 32c-2-4-3-9-3-14 5 4 9 6 14 7M8 32c-2 4-3 9-3 14 5-4 9-6 14-7" fill="none" stroke="#2EC4B6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-          <use href="#i-dente" x="28" y="16" width="26" height="26" fill="#fff"/>
-        </svg>
-      </span>
+      <img class="brand__peixe" src="assets/img/logo-peixe.png" width="192" height="305" alt="" decoding="async">
       <span class="brand__txt"><span class="brand__nome"><b>Odonto</b>Fish</span><small>odontologia fit</small></span>
     </a>
 
@@ -871,7 +866,7 @@
 
     <div class="local__txt">
       <p class="local__marca">
-        <svg class="ico ico--lg" aria-hidden="true"><use href="#i-dente"/></svg>
+        <img class="local__peixe" src="assets/img/logo-peixe.png" width="192" height="305" alt="" loading="lazy" decoding="async">
         <span class="local__nome"><span class="local__nome-l"><b>Odonto</b>Fish</span><small>odontologia fit</small></span>
       </p>
       <h2 id="t-local" class="tit tit--luz">Fácil acesso na Zona Leste</h2>
@@ -906,7 +901,7 @@
 <!-- ===================== RODAPÉ ===================== -->
 <footer class="rodape">
   <div class="wrap rodape__in">
-    <p class="rodape__marca"><svg class="ico ico--lg" aria-hidden="true"><use href="#i-dente"/></svg> <span class="rodape__nome"><b>Odonto</b>Fish</span></p>
+    <p class="rodape__marca"><img class="rodape__peixe" src="assets/img/logo-peixe.png" width="192" height="305" alt="" loading="lazy" decoding="async"> <span class="rodape__nome"><b>Odonto</b>Fish</span></p>
     <nav class="rodape__nav" aria-label="Rodapé">
       <ul>
         <li><a href="#dra-katia">A Dra. Katia</a></li>
