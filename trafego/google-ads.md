@@ -6,7 +6,7 @@ Documento vivo. Cada aula do módulo entra em três lugares:
 2. **Aplicação OdontoFish** — como cada regra vira configuração para a Dra. Katia.
 3. **Registro por aula** — o resumo de cada aula, para consulta.
 
-Progresso: aulas 0 a 5 de 11.
+Progresso: aulas 0 a 7 de 11. (A aula 8, "Criando anúncio parte 01", ainda não chegou.)
 
 ---
 
@@ -134,6 +134,39 @@ Ferramenta: **Planejador de Palavras-chave** do Google Ads + planilha.
 7. **Uma palavra só já dá resultado.** Melhor 1 palavra com 10 cliques/dia
    do que 4 sem verba.
 
+### Tipos de campanha
+
+- Sempre começar com **objetivo Leads + tipo Pesquisa**, mandando para a
+  landing page.
+- **Performance Max** (Pesquisa + YouTube + Gmail + Maps + Discovery + Display
+  numa campanha só) só com histórico de conversões e verba sobrando.
+- **Não** criar campanha de "Visitas a lojas" (virou PMax e é difícil de
+  medir). O Perfil da Empresa entra como **recurso de local** dentro da
+  campanha de Pesquisa.
+- Display, Vídeo, Geração de demanda e Shopping ficam para depois.
+
+### Configuração da campanha de Pesquisa
+
+| Etapa | Configuração |
+|---|---|
+| Objetivo / tipo | Leads (meta de Contato do GTM) / Pesquisa |
+| Maneiras de alcançar | ✅ Visitas ao site (landing page) · ✅ Ligações (só se alguém atende na hora) · ✅ Visitas à loja (endereço do Perfil) · ❌ Formulário de lead · ❌ WhatsApp direto no anúncio |
+| Telefone | formato do exemplo do Google, com zero no DDD: `(011) 98888-8888` |
+| Nome | `[OBJETIVO] [TIPO] [Página/Oferta]` |
+| Lances | Conversões (Maximizar conversões). **Sem CPA desejado até 30 conversões.** Não marcar "só novos clientes" |
+| Redes | ❌ Parceiros de pesquisa · ❌ Rede de Display |
+| Locais | cidade pequena: cidade inteira · capital: distrito/bairro, CEP ou raio em **km** com modo alfinete |
+| Opções de local | **Presença** (só "Presença ou interesse" para serviço 100% remoto) |
+| Idiomas | todos |
+| Anúncios políticos da UE | Não |
+| Públicos | em **Observação** (nunca Segmentação): status parental, estado civil, segmentos de mercado |
+| Rotação | Otimizar |
+| Programação | 6 blocos: seg–sex e sáb–dom, cada um em 00–07 / 07–19 / 19–00. Se o fechamento depende de resposta na hora, só os horários de atendimento |
+| IA Max | desligada |
+
+Dica: se a busca de público pelo nome do serviço não acha nada, buscar pelo
+problema ("conserto" achou "Serviços de eletricista").
+
 ### Não fazer
 
 - Público aberto "para filtrar depois".
@@ -156,6 +189,15 @@ Ferramenta: **Planejador de Palavras-chave** do Google Ads + planilha.
 - Palavra com menos de 1.000 buscas/mês sem caixa para 20–30 cliques/dia.
 - Termos de tratamento específico em saúde ("clareamento").
 - Várias palavras no mesmo grupo sem verba proporcional.
+- Começar por Performance Max ou criar campanha só para o Perfil da Empresa.
+- Formulário de lead nativo ou WhatsApp direto do anúncio (lead desqualificado).
+- CPA desejado antes de 30 conversões.
+- Deixar Parceiros de pesquisa e Display marcados (o Google joga a sobra da
+  verba no Display).
+- Raio em milhas; "Presença ou interesse" em negócio local; só português.
+- Público em Segmentação em vez de Observação.
+- Rodar 24 h quando ninguém responde fora do horário.
+- Ligar IA Max em conta nova.
 
 ---
 
@@ -303,6 +345,48 @@ provável que fique entre R$ 3 e R$ 8, ou seja, **R$ 30 a R$ 80/dia por
 palavra**. Começar com **1 palavra só** (a nº 1 ou 2, a que tiver ≥ 1.000
 buscas e lance mais baixo) e só abrir outro grupo quando houver verba.
 
+### Campanha 1 — configuração
+
+| Etapa | OdontoFish |
+|---|---|
+| Nome | `[LEADS] [PESQUISA] Odontopediatra` |
+| Página | landing page de odontopediatra/primeira consulta (enquanto não existir, o `index.html`) |
+| Maneiras de alcançar | ✅ Visitas ao site · ✅ Visitas à loja (Perfil da clínica) · Ligações: ✅ **só se a recepção atende o fixo na hora** |
+| Telefone | `(011) 2911-5266` |
+| Lances | Maximizar conversões, sem CPA |
+| Redes | Parceiros e Display desmarcados |
+| Opções de local | Presença |
+| Idiomas | todos |
+| IA Max | desligada |
+
+**Locais.** São Paulo é capital, então nada de cidade inteira. Sugestão:
+adicionar **cada distrito separado**, para o relatório mostrar qual converte:
+
+- Distritos de SP: São Lucas, Vila Prudente, Mooca, Aricanduva, Carrão, Tatuapé.
+- São Caetano do Sul (cidade inteira, é pequena e colada).
+- Santo André: cidade grande e mais longe. Em vez da cidade inteira, um
+  **alfinete com raio de 2–3 km** na divisa mais próxima. Ou deixar de fora no
+  começo.
+
+Se o Google não achar algum distrito pelo nome, usar alfinete em km sobre ele.
+
+**Públicos em Observação** (encaixam bem aqui, porque quem busca é pai/mãe):
+
+- Status parental: pais de bebês, de crianças pequenas, de pré-escolares e
+  do ensino fundamental.
+- Segmentos de mercado: pesquisar "odonto", "dent" e, se não vier nada, o
+  problema ("dor de dente", "aparelho").
+
+**Programação.** A clínica atende seg–sex 9h–18h e sáb 8h–12h, mas a
+conversão é o clique no WhatsApp, e o pai/mãe pode mandar mensagem à noite e
+ser respondido de manhã. Então:
+
+- Começar com os **6 blocos** do curso, para ter dado de horário.
+- Ter **resposta automática** no WhatsApp Business fora do horário
+  ("Recebemos! Respondemos amanhã a partir das 9h").
+- Se os leads da noite/fim de semana não virarem consulta, cortar esses blocos.
+- O recurso de **ligação** fica só no horário em que alguém atende o fixo.
+
 ---
 
 ## 3. Registro por aula
@@ -373,6 +457,29 @@ práticas atuais para campanhas que vendem. Sem configuração.
   Piracicaba "dentista perto de mim" R$ 6,66 → R$ 66/dia.
 - Frase-chave: "Uma palavra só vai te dar resultado."
 
+### Aula 6 — Tipos de campanha
+
+- 7 objetivos + 1 sem orientação; dentro de Leads, 6 tipos (Pesquisa, PMax,
+  Geração de demanda, Vídeo, Display, Shopping).
+- Começar sempre por Leads → Pesquisa → landing page.
+- PMax junta 6 canais e só funciona com histórico e verba.
+- Perfil da Empresa entra como recurso da Pesquisa, não como campanha própria.
+- Frase-chave: "Foca em Leads, faz primeiro esse básico bem feito e depois
+  você avança."
+
+### Aula 7 — Criando a campanha
+
+- Maneiras de alcançar: site + ligação (se atende na hora) + visita à loja;
+  sem formulário nativo e sem WhatsApp direto.
+- Nome `[LEADS] [PESQUISA] Página`.
+- Maximizar conversões; CPA só depois de 30 conversões.
+- Desmarcar Parceiros e Display.
+- Local: cidade, distrito/CEP ou alfinete em km; opção "Presença".
+- Idiomas todos; públicos em Observação.
+- Programação em 6 blocos; IA Max desligada.
+- Frase-chave: "O Google é sorrateiro… se sobrou verba no dia, ele joga lá na
+  Rede de Display. Minha recomendação: desmarca tudo."
+
 ---
 
 ## Pendências para a Dra. Katia
@@ -387,3 +494,6 @@ práticas atuais para campanhas que vendem. Sem configuração.
 - [ ] Onde o site está hospedado e quem tem acesso (para instalar o GTM).
 - [ ] Link e acesso de administrador ao Perfil da Empresa no Google.
 - [ ] Rodar o Planejador com a lista de palavras e preencher volume e lances.
+- [ ] A recepção atende o telefone fixo na hora? (define se ativa ligações)
+- [ ] Quem responde o WhatsApp e em que horário? Tem resposta automática?
+- [ ] Atende pacientes de Santo André? (define se entra no alvo)
