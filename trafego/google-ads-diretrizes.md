@@ -6,7 +6,8 @@ num lugar só, organizado pela ordem em que as coisas são feitas.
 A aplicação para cada cliente fica em documento próprio
 (ex.: `google-ads-odontofish.md`).
 
-Aulas incluídas: 0 a 7 de 11. Falta a aula 8 (Criando anúncio parte 01).
+Aulas incluídas: 0 a 8 do G Carvalho + aula extra de otimização do Adriano
+Genini ("Otimização de campanha Google Ads na prática").
 
 ---
 
@@ -25,6 +26,10 @@ Aulas incluídas: 0 a 7 de 11. Falta a aula 8 (Criando anúncio parte 01).
 8. **1 palavra-chave por grupo de anúncios**. Uma palavra só já dá resultado.
 9. **Maximizar conversões** sem CPA até ter **30 conversões**.
 10. Não pausar a campanha todo dia: o Google compensa o gasto no mês.
+11. Anúncio se constrói **a partir da landing page**, com títulos de
+    disponibilidade, urgência e solução. **1 anúncio bom por grupo.**
+12. Sem **CAC Teto** não se otimiza: antes de mexer, saber ticket médio,
+    vendas e quanto se pode pagar por cliente.
 
 ---
 
@@ -269,18 +274,115 @@ Dicas:
 
 ---
 
-## Otimização (o que o curso já ensinou a olhar)
+## Etapa 7 — Anúncio responsivo de pesquisa
 
-| Onde olhar | O que decidir |
+> "A gente tem uma base de ouro para construir um bom anúncio. E qual é essa
+> base? A própria página."
+
+Pré-requisito: palavra-chave já escolhida (ela define o orçamento) e os 4 pilares prontos.
+
+### 7.1 URL e títulos
+
+- **URL final:** link da landing page. **Caminho de exibição:** em branco.
+- **15 títulos** (o máximo). Fontes: seções da página (serviços, quem sou,
+  benefícios, FAQ) e anúncios dos concorrentes (pesquisar a palavra no Google).
+- **Título 1 = palavra-chave.**
+  - Grupo com 1 palavra: digitar a palavra ("Eletricista Santo André").
+  - Grupo com 2+ palavras: digitar `{` → **Inserção de palavra-chave** com
+    texto padrão.
+- Demais títulos focados em **disponibilidade, urgência e solução**:
+  - oferta da página ("Atendimento 24 horas", "Serviço com garantia");
+  - urgência/proximidade ("Resolvo seu problema agora", "Estou bem perto de você");
+  - local **igual ao da palavra** ("Disponível em Santo André", não "no ABC").
+- Profissional autônomo: escrever em **1ª pessoa**.
+- **Não** gastar título com o nome da empresa ("Eletricista Bonelli") nem com
+  genéricos ("Eletricista mais próximo").
+
+### 7.2 Descrições (preencher todas)
+
+1. Inserção de palavra-chave + complemento ("{Eletricista Santo André}
+   disponível agora."). Com 2 palavras no grupo, conferir se a frase faz
+   sentido com as duas.
+2. Proximidade + ação, **com a palavra-chave** no texto (sobe a qualidade
+   para "Excelente").
+3. e 4. Apresentação da página dividida em duas, trocando região ampla pela
+   cidade da palavra-chave.
+
+Revisar em **Visualizar anúncios** no celular e no computador (90% acessa
+pelo celular) e corrigir combinações sem sentido.
+
+### 7.3 Recursos (extensões)
+
+| Recurso | Como |
 |---|---|
-| Conversões < 30 | não mexer em lance; deixar aprender |
-| Conversões ≥ 30 | estudar e definir CPA desejado |
-| Locais (distritos/alfinetes) | concentrar verba onde converte |
-| Programação (6 blocos) | ajustar lance ou cortar horários que não convertem |
-| Públicos em observação | ver quais segmentos convertem melhor |
-| Scroll 25/50/75/90 | achar a dobra da landing page que faz a pessoa sair |
-| Verba × palavra | orçamento ≥ lance médio × 10 por palavra ativa |
-| Redes | conferir que Parceiros e Display continuam desmarcados |
+| Nome e logotipo | adicionar (logo liberado após verificação da conta) |
+| **Sitelinks** (4) | um para cada seção do menu da página (vale âncora de página única): Serviços, Sobre, Benefícios, Perguntas frequentes. Descrição do sitelink quase não aparece; não perder tempo |
+| **Frases de destaque** (4+) | benefícios da oferta |
+| Preço | opcional; o professor só usa para produto físico |
+| **Chamada** | formato `05511999999999` (055 + DDD + número). Opções avançadas → só nos dias/horários em que atende |
+| **Snippets estruturados** | tipo **Arredores**: bairros da cidade · tipo **Serviços**: todos os serviços da página |
+
+### 7.4 Quantidade
+
+- **1 anúncio excelente por grupo** com verba baixa e 1 palavra (2 se tiver
+  um pouco mais de verba). Um responsivo já vale **30+ versões**.
+
+> "O Google, principalmente na rede de pesquisa, é uma página de jornal online."
+
+---
+
+## Otimização (método Adriano Genini + G Carvalho)
+
+> "A gente pode olhar para uma palavra-chave e achar que ela tá ruim, mas na
+> real a palavra em si não tá ruim, os termos de pesquisa tão ruins."
+
+### Passo 0 — Planilha (antes de abrir o Google Ads)
+
+Escolher o período (1 semana, 14 ou 30 dias) e preencher:
+
+| Campo | O que é |
+|---|---|
+| Verba investida | gasto no período |
+| Impressões / Cliques | do Google Ads |
+| **Leads** | quem converteu (contato) |
+| **Oportunidades** | leads com perfil e intenção real de comprar (de 100 leads, 50 queriam comprar → 50 oportunidades) |
+| Vendas | fechadas |
+| Ticket médio | média dos pedidos (R$ 1.000 + R$ 200 → R$ 600) |
+| **CAC Teto** | o máximo que dá para pagar por uma venda. Referência: **até 10% do valor do produto** (não é regra fixa; com esteira de produtos pode ser maior) |
+
+Calculados: taxas entre etapas, **Faturamento = ticket × vendas**,
+**CAC Real = verba ÷ vendas**. CAC Real acima do Teto = vermelho.
+
+Referência: **CTR de 10–15% na Pesquisa já é muito bom.** As médias da
+planilha valem só para Pesquisa, não para Meta.
+
+### Diagnóstico macro
+
+Campanha → últimos 30 dias → custo por conversão × CAC Teto:
+
+| Situação | Ação |
+|---|---|
+| Sem resultado ou resultado péssimo | **pausar** e testar outra estratégia |
+| Vende com lucro, CAC um pouco acima do Teto | otimizar na ordem abaixo |
+| CAC bem abaixo do Teto | **aumentar a verba** |
+| Menos de 30 conversões | não mexer em lance (G Carvalho) |
+| 30+ conversões | estudar e definir CPA desejado (G Carvalho) |
+
+### Ordem das otimizações
+
+| # | Onde | O que fazer |
+|---|---|---|
+| 1 | **Termos de pesquisa** (grupo → Insights e relatórios) | poucos termos ruins → **negativar**. Quase todos ruins → **fechar a correspondência** (Ampla → Frase/Exata; Frase → Exata). Repetir em todos os grupos |
+| 2 | **Palavras-chave** | custo, conversões, valor e ROAS (valor ÷ custo) × CAC Teto. Pausar as que passam do Teto. Palavra nova só com 100% de certeza; teste vai em estrutura separada |
+| 3 | **Públicos** (formato Tabela) | Idade e Sexo: excluir faixa com CAC muito acima do Teto; limpar ajustes de lance antigos. **Nunca excluir "Desconhecido"** se converte bem. Renda: só depois de **2–3 meses** e com "Desconhecido" quase nulo |
+| 4 | **Locais** (nível de **campanha**; no grupo fica vazio) | ordenar por conversões; excluir quem não converte; local excepcional pode virar campanha própria. Com 6 blocos de horário: ajustar ou cortar blocos ruins (G Carvalho) |
+| 5 | **Recursos** | comparar custo por conversão entre sitelinks, frases, snippets, local, chamada. **Pausar** (não remover) os caros. O campeão vira destaque na página |
+| 6 | **Site** (externo) | argumento estratégico, não gosto: alinhamento, lacunas de copy, hierarquia (trazer para o topo o que está escondido). Scroll 25/50/75/90 mostra onde a pessoa sai. Bom ajuste de site dá 2–3× mais vendas |
+| 7 | **Comercial** (externo) | com o cliente, olhar os leads de 30 dias: quem **comprou** (o que atraiu → repetir) e quem **não comprou** (objeção não quebrada ou anúncio atraindo gente errada → ajustar copy) |
+
+Sempre conferir também que Parceiros de pesquisa e Display continuam desmarcados.
+
+> "Nunca negocie com não saber o resultado que você tá gerando."
 
 ---
 
@@ -328,6 +430,24 @@ Dicas:
 - Rodar 24 h sem ninguém para responder.
 - IA Max ligada.
 
+**Anúncio**
+- Escolher palavra-chave "do nada", sem planejamento.
+- Título genérico ou com o nome da empresa.
+- Local do título mais amplo que o da palavra-chave.
+- Inserção de palavra-chave na descrição sem checar o sentido.
+- Chamada ativa 24 h quando o cliente não atende.
+- Vários anúncios no mesmo grupo com verba baixa.
+
+**Otimização**
+- Mexer sem saber ticket, CAC Real e CAC Teto ("apertador de botão").
+- Tratar todo lead como oportunidade.
+- Usar referências da Pesquisa para Meta.
+- Pausar palavra-chave antes de olhar os termos de pesquisa.
+- Misturar teste na campanha que performa.
+- Excluir "Desconhecido" que converte; mexer em renda antes de 2–3 meses.
+- Procurar Locais no nível de grupo.
+- Criticar site por gosto; ignorar o comercial.
+
 ---
 
 ## Registro por aula
@@ -368,3 +488,17 @@ com histórico; Perfil da Empresa como recurso.
 Maneiras de alcançar; nome padrão; Maximizar conversões sem CPA até 30;
 desmarcar Parceiros e Display; locais por porte de cidade; Presença; todos os
 idiomas; públicos em Observação; 6 blocos de horário; IA Max desligada.
+
+### Aula 8 — Criando o anúncio
+Página como base; 15 títulos (1º = palavra-chave ou inserção dinâmica) com
+disponibilidade, urgência e solução; descrições com a palavra-chave para
+qualidade "Excelente"; revisar no celular; 4 sitelinks das seções, 4 frases
+de destaque, chamada `055…` com horário, snippets de Arredores e Serviços;
+1 anúncio por grupo. Exemplo: eletricista em Santo André.
+
+### Extra — Otimização na prática (Adriano Genini)
+Planilha com leads × oportunidades × vendas, ticket e CAC Teto (até 10% do
+produto); diagnóstico macro (pausar / otimizar / escalar); ordem: termos de
+pesquisa → palavras → públicos → locais → recursos → site → comercial. CTR
+10–15% é muito bom. Renda só após 2–3 meses. Recurso campeão vira destaque
+na página.
