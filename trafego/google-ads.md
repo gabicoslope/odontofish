@@ -6,7 +6,7 @@ Documento vivo. Cada aula do módulo entra em três lugares:
 2. **Aplicação OdontoFish** — como cada regra vira configuração para a Dra. Katia.
 3. **Registro por aula** — o resumo de cada aula, para consulta.
 
-Progresso: aulas 0 a 3 de 11.
+Progresso: aulas 0 a 5 de 11.
 
 ---
 
@@ -98,6 +98,42 @@ Ordem de montagem:
 
 O scroll mostra em que dobra da página as pessoas desistem.
 
+8. **Vincular no Google Ads** (Ferramentas → Central de dados):
+   - **Google Analytics**: escolher a propriedade GA4, deixar marcado
+     "Importar públicos-alvo e métricas" → Vincular.
+   - **Perfil da Empresa no Google** (Google Meu Negócio), se o negócio for local.
+9. **Auditar a Tag do Google**: em Central de dados → Tag do Google →
+   Gerenciar, anotar o final do ID do Google Ads e conferir que é o mesmo da
+   tag `[00] - [Google Ads] - Tag do Google` no GTM.
+
+### Palavras-chave e orçamento
+
+Ferramenta: **Planejador de Palavras-chave** do Google Ads + planilha.
+
+1. Pesquisar pelo termo do serviço (sem o site, se as sugestões vierem
+   ruins), filtrar pela **cidade/região** e ordenar por média de pesquisas mensais.
+2. Para cada candidata, anotar:
+
+| Palavra-chave | Volume (teto da faixa) | Menor lance | Maior lance | Lance médio | Cliques/dia | Orçamento/dia |
+|---|---|---|---|---|---|---|
+| … | … | lance topo da página (menor) | lance topo da página (maior) | (menor + maior) ÷ 2 | 10 | lance médio × cliques |
+
+3. Escolher pela intenção: **fundo de funil** primeiro ("serviço + cidade",
+   "serviço perto de mim"). Evitar termos abertos demais ou ambíguos (que
+   atraem quem procura emprego, por exemplo).
+4. Regras de viabilidade:
+   - **≥ 1.000 buscas/mês** → 10 cliques/dia bastam.
+   - **~100 buscas/mês** → só com 20–30 cliques/dia (verba 2–3× maior).
+   - **Orçamento diário mínimo = lance médio × 10.** Abaixo disso, não anunciar.
+5. **Saúde:** o Google restringe termos de tratamento ("clareamento",
+   "clínica odontológica" chegam a não ter volume). Na saúde, usar palavras
+   mais abertas.
+6. Estrutura: **1 palavra-chave por grupo de anúncios**. Para 2–4 palavras,
+   um grupo para cada e somar as verbas no orçamento da campanha (o Google só
+   tem orçamento por campanha e distribui sozinho entre os grupos).
+7. **Uma palavra só já dá resultado.** Melhor 1 palavra com 10 cliques/dia
+   do que 4 sem verba.
+
 ### Não fazer
 
 - Público aberto "para filtrar depois".
@@ -115,6 +151,11 @@ O scroll mostra em que dobra da página as pessoas desistem.
 - Duplicar tag de scroll e esquecer de trocar o nome do evento.
 - Conversão otimizada ou valor fixo em clique de WhatsApp.
 - Esquecer de publicar o GTM.
+- Deixar o ID da Tag do Google diferente entre Google Ads e GTM.
+- Verba diária menor que lance médio × 10.
+- Palavra com menos de 1.000 buscas/mês sem caixa para 20–30 cliques/dia.
+- Termos de tratamento específico em saúde ("clareamento").
+- Várias palavras no mesmo grupo sem verba proporcional.
 
 ---
 
@@ -178,8 +219,8 @@ atendida, perguntas frequentes e botão de WhatsApp.
 
 ### Pilar 4 — Anúncios
 
-Vou montar títulos, descrições e palavras-chave quando as aulas de
-configuração chegarem. Direção:
+Vou montar títulos e descrições quando as aulas de configuração chegarem.
+Direção:
 
 - Títulos com serviço + benefício: "Odontopediatra no São Lucas",
   "Primeira Consulta Sem Pressa", "Atendimento Adaptado para TEA".
@@ -229,6 +270,39 @@ em que seção as famílias desistem.
 - **LGPD:** o site ainda não tem aviso de cookies. Com GA4 + remarketing
   rodando, convém incluir um aviso simples e citar na política de privacidade.
 
+**Vinculações:** GA4 e o **Perfil da Empresa no Google** da clínica (é negócio
+local, então entra). O link do perfil ainda está genérico no site
+(pendência do README); o mesmo perfil serve para os dois.
+
+### Palavras-chave
+
+Não tenho acesso ao Planejador, então **volumes e lances ficam para você
+preencher** na conta. Abaixo, as candidatas na ordem em que eu testaria.
+
+Local no Planejador: São Paulo (cidade) + São Caetano do Sul + Santo André.
+Na campanha, o alvo é mais fechado: raio em torno do consultório / os 8 bairros.
+
+| # | Palavra-chave | Funil | Observação |
+|---|---|---|---|
+| 1 | odontopediatra perto de mim | fundo | a melhor candidata se tiver volume |
+| 2 | dentista infantil perto de mim | fundo | muita gente não conhece a palavra "odontopediatra" |
+| 3 | odontopediatra zona leste | fundo | região inteira de uma vez |
+| 4 | dentista infantil zona leste | fundo | idem |
+| 5 | odontopediatra [bairro] (Mooca, Tatuapé, Vila Prudente…) | fundo | provável volume baixo — servem mais como variação |
+| 6 | odontopediatra | meio | aberta, SP inteira; só com raio bem fechado |
+| 7 | dentista infantil | meio | idem |
+| 8 | dentista para autista / odontopediatra TEA | fundo | **risco de política** (condição de saúde). Testar no Planejador: se voltar sem volume, está restrito |
+
+**Não usar** "dentista" puro: em São Paulo é caríssimo e traz adulto, que a
+clínica não atende. A dica do curso de "palavra aberta na saúde" é para
+cidade pequena e clínica geral; aqui a especialidade já filtra.
+
+**Conta de orçamento — atenção:** a Oferta A (R$ 20/dia) só fecha com a
+regra dos 10 cliques se o lance médio for até **R$ 2**. Em São Paulo é bem
+provável que fique entre R$ 3 e R$ 8, ou seja, **R$ 30 a R$ 80/dia por
+palavra**. Começar com **1 palavra só** (a nº 1 ou 2, a que tiver ≥ 1.000
+buscas e lance mais baixo) e só abrir outro grupo quando houver verba.
+
 ---
 
 ## 3. Registro por aula
@@ -277,6 +351,28 @@ práticas atuais para campanhas que vendem. Sem configuração.
 - Frase-chave: "Google Analytics e Google Tag Manager, o que manda é
   organização."
 
+### Aula 4 — GTM parte 2
+
+- Enviar e publicar o GTM antes de integrar.
+- Central de dados do Google Ads: vincular GA4 (importando públicos e
+  métricas) e Perfil da Empresa no Google. Google Sheets é opcional.
+- Conferir que o ID da Tag do Google (Central de dados → Gerenciar) é o mesmo
+  do GTM.
+- Frase-chave: "Vamos verificar se foi a mesma tag que foi lá pro gerenciador
+  pra gente deixar a estrutura toda redonda e não ficar pontas soltas."
+
+### Aula 5 — Planejamento de palavras-chave
+
+- Planejador + planilha: volume (teto), lance menor e maior, média, 10
+  cliques/dia → orçamento mínimo.
+- ≥ 1.000 buscas/mês; com ~100 buscas, 20–30 cliques/dia.
+- Fundo de funil primeiro ("serviço + cidade", "perto de mim").
+- Saúde: termos de tratamento são restritos; usar palavras mais abertas.
+- 1 palavra por grupo; orçamento só no nível da campanha.
+- Exemplos de dentista: Pato Branco "dentista" R$ 4,49 de lance → R$ 45/dia;
+  Piracicaba "dentista perto de mim" R$ 6,66 → R$ 66/dia.
+- Frase-chave: "Uma palavra só vai te dar resultado."
+
 ---
 
 ## Pendências para a Dra. Katia
@@ -289,3 +385,5 @@ práticas atuais para campanhas que vendem. Sem configuração.
 - [ ] A clínica tem CNPJ? (perfil de pagamento)
 - [ ] Cartão ou Pix para pagar o Google Ads.
 - [ ] Onde o site está hospedado e quem tem acesso (para instalar o GTM).
+- [ ] Link e acesso de administrador ao Perfil da Empresa no Google.
+- [ ] Rodar o Planejador com a lista de palavras e preencher volume e lances.
